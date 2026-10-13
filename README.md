@@ -26,4 +26,8 @@ Cute, colorful, detailed cartoon illustrations inspired by original child sketch
 - Unknown
 - Path Figure
 
-All images are in the `characters/` directory (to be added).
+## Images
+
+The full set of generated character images is available as a downloadable package from the conversation. You can extract and commit them into the `characters/` directory.
+
+Repository: https://github.com/tomketang/Fantasy-Squad
