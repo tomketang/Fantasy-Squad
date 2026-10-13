@@ -28,6 +28,8 @@ Cute, colorful, detailed cartoon illustrations inspired by original child sketch
 
 ## Images
 
-The full set of generated character images is available as a downloadable package from the conversation. You can extract and commit them into the `characters/` directory.
+The full set of generated character images is available as a downloadable package. Extract the archive and commit the images into the `characters/` directory.
+
+Due to GitHub API content encoding limitations for binary files via the connected tools, the images are provided as a package for manual upload.
 
 Repository: https://github.com/tomketang/Fantasy-Squad
