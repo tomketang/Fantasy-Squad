@@ -1,36 +1,32 @@
-# Fantasy Squad
+# Fantasy Squad 奇幻小队
 
-Character designs and playable web prototype for the Fantasy Squad game.
+收集可爱的奇幻角色，用星积分养成，组队闯关。自动战斗，关键技能由你来放。
 
-Cute, colorful, detailed cartoon illustrations inspired by original child sketches.
+## 本地运行
 
-## Playable Prototype
+需要 Node.js 20+。
 
-A simple web-based demo is available at `game/index.html`.
+```bash
+npm install
+npm run dev
+```
 
-Features:
-- Username + password login/register (local storage)
-- Character collection gallery
-- Points cultivation system
-- Team building (up to 3 characters)
-- Auto-battle vs computer
+开发服务器默认在 [http://127.0.0.1:8080](http://127.0.0.1:8080)。
 
-To run locally: download the repo, place the character images (`robot.jpg`, `giant.jpg`, etc.) in the `game/` folder next to `index.html`, then open `index.html` in a browser.
+```bash
+npm run build
+npm test
+```
 
-## Characters
+## 玩法
 
-- Robot
-- Giant
-- Knight
-- Plant Creature
-- Carrot Monster
-- Archer
-- (and more from the original sketch)
+- 登录后进入营地，用星积分培养角色
+- 最多编入 3 名角色组队
+- 自动战斗，主动技能需要你来放
+- 通关解锁新角色，并收录进图鉴
 
-## Images
+角色原画在 `public/characters/`。
 
-Character image assets are available as a downloadable package. Extract and place the `.jpg` files into the `game/` directory for the prototype to display them.
+## 技术栈
 
-Due to GitHub API content encoding limitations for binary files via the connected tools, the images need to be uploaded manually.
-
-Repository: https://github.com/tomketang/Fantasy-Squad
+React 19、TanStack Start、Vite、Tailwind CSS、Zustand。

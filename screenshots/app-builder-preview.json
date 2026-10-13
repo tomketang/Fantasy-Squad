@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Fantasy Squad 奇幻小队",
+      "hasCanvas": false,
+      "bodyTextLen": 318,
+      "bodyTextHash": "cb150419af603943b90f187975300a9ec9cb19e12837bab3502f4855166edc93",
+      "bodyTextPrefix": "FANTASY SQUAD 见习队长 星积分 200 出战小队 战力 921 小齿轮 红缨 花盆 第一位是前排，对手会优先打前排",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Fantasy Squad 奇幻小队",
+      "hasCanvas": false,
+      "bodyTextLen": 318,
+      "bodyTextHash": "cb150419af603943b90f187975300a9ec9cb19e12837bab3502f4855166edc93",
+      "bodyTextPrefix": "FANTASY SQUAD 见习队长 星积分 200 出战小队 战力 921 小齿轮 红缨 花盆 第一位是前排，对手会优先打前排",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

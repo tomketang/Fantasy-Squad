@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Noto+Sans+SC:wght@400;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f6efe4;
+  --color-paper-deep: #efe2cf;
+  --color-ink: #3a2a22;
+  --color-ink-soft: #6e584c;
+  --color-teal: #1f7a6b;
+  --color-teal-deep: #14584c;
+  --color-coral: #e25b45;
+  --color-gold: #e0a040;
+  --color-gold-deep: #8a5a16;
+  --color-card: #fffaf3;
+  --color-line: #e4d3bc;
+  --color-meadow: #d5e7c8;
+  --color-mint: #3f8f62;
+  --color-bloom: #fde8df;
+  --color-dusk: #e4eef0;
+  --font-sans: "Noto Sans SC", "WenQuanYi Zen Hei", "PingFang SC", sans-serif;
+  --font-display: "ZCOOL KuaiLe", "WenQuanYi Zen Hei", "PingFang SC", cursive;
+  --radius-card: 1.25rem;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body {
+    background: var(--color-meadow);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+  }
+
+  input {
+    font-family: inherit;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 44px;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  touch-action: manipulation;
+  transition: transform 150ms ease, filter 150ms ease;
+}
+
+.btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 2px;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.btn-primary {
+  background: var(--color-teal);
+  color: #fffaf3;
+}
+
+.btn-coral {
+  background: var(--color-coral);
+  color: #fffaf3;
+}
+
+.btn-gold {
+  background: var(--color-gold);
+  color: var(--color-ink);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--color-ink);
+  box-shadow: inset 0 0 0 1.5px var(--color-line);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.app-shell[data-banner="bloom"] {
+  background: var(--color-bloom);
+}
+
+.app-shell[data-banner="dusk"] {
+  background: var(--color-dusk);
+}
+
+.fs-bob {
+  animation: fs-bob 2.6s ease-in-out infinite;
+}
+
+.fs-lunge-r {
+  animation: fs-lunge-r 0.32s ease;
+}
+
+.fs-lunge-l {
+  animation: fs-lunge-l 0.32s ease;
+}
+
+.fs-float {
+  animation: fs-float 0.85s ease-out forwards;
+}
+
+.fs-shake {
+  animation: fs-shake 0.32s linear;
+}
+
+.fs-pop {
+  animation: fs-pop 0.55s ease;
+}
+
+@keyframes fs-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes fs-lunge-r {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(16px) scale(1.04);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fs-lunge-l {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-16px) scale(1.04);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fs-float {
+  from {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -32px);
+  }
+}
+
+@keyframes fs-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes fs-pop {
+  0% {
+    transform: scale(0.92);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.ring-common {
+  box-shadow: inset 0 0 0 1.5px var(--color-line);
+}
+.ring-rare {
+  box-shadow: inset 0 0 0 2px var(--color-teal);
+}
+.ring-epic {
+  box-shadow: inset 0 0 0 2px var(--color-gold);
+}
+.fs-ready {
+  box-shadow: 0 0 0 3px var(--color-gold);
+}
+.fs-hurt {
+  box-shadow: inset 0 0 0 3px var(--color-coral);
+}
+.nav-pad {
+  padding-bottom: calc(4.75rem + env(safe-area-inset-bottom));
+}
+.nav-bar {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fs-bob,
+  .fs-lunge-r,
+  .fs-lunge-l,
+  .fs-float,
+  .fs-shake,
+  .fs-pop {
+    animation: none;
+  }
+}
